@@ -4,6 +4,7 @@ import random
 from PIL import Image
 import numpy as np
 import tensorflow as tf
+from tqdm import tqdm
 
 from vaik_pascal_voc_rw_ex import pascal_voc_rw_ex
 
@@ -46,7 +47,7 @@ def crop_char_image(mnist_char_image):
 def write(output_sub_dir_path, sample_num, image_max_size, image_min_size, char_max_size, char_min_size, char_max_num,
           char_min_num, x, y):
     os.makedirs(output_sub_dir_path, exist_ok=True)
-    for file_index in range(sample_num):
+    for file_index in tqdm(range(sample_num), desc=f'write at {output_sub_dir_path}'):
         canvas = np.zeros(
             (random.randint(image_min_size, image_max_size), random.randint(image_min_size, image_max_size), 3),
             dtype=np.uint8)

@@ -20,3 +20,7 @@ python main.py --output_dir_path ~/.vaik-mnist-detection-dataset \
                 --char_max_num 6 \
                 --char_min_num 2
 ```
+
+## Output
+
+![vaik-mnist-detection-dataset-output](https://user-images.githubusercontent.com/116471878/198033194-8282c30a-bce0-4634-86bc-a85c83ccd1a8.png)

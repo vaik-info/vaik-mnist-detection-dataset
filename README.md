@@ -2,6 +2,10 @@
 
 Create Pascal VOC formatted MNIST detection dataset
 
+## Example
+
+![vaik-mnist-detection-dataset](https://user-images.githubusercontent.com/116471878/198029678-ce667f2f-f1eb-44c0-b737-33c94ff47125.png)
+
 ## Usage
 
 ```shell

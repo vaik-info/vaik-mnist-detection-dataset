@@ -1,6 +1,6 @@
 # vaik-mnist-detection-dataset
 
-Create Pascal VOC formatted　MNIST detection dataset
+Create Pascal VOC formatted MNIST detection dataset
 
 ## Usage
 

@@ -22,5 +22,76 @@ python main.py --output_dir_path ~/.vaik-mnist-detection-dataset \
 ```
 
 ## Output
+- classes.txt
+
+```text
+zero
+one
+two
+three
+four
+five
+six
+seven
+eight
+nine
+```
+
+- label_map.txt
+
+```text
+item {
+    name: "zero",
+    id: 1,
+    display_name: "zero"
+}
+item {
+    name: "one",
+    id: 2,
+    display_name: "one"
+}
+item {
+    name: "two",
+    id: 3,
+    display_name: "two"
+}
+item {
+    name: "three",
+    id: 4,
+    display_name: "three"
+}
+item {
+    name: "four",
+    id: 5,
+    display_name: "four"
+}
+item {
+    name: "five",
+    id: 6,
+    display_name: "five"
+}
+item {
+    name: "six",
+    id: 7,
+    display_name: "six"
+}
+item {
+    name: "seven",
+    id: 8,
+    display_name: "seven"
+}
+item {
+    name: "eight",
+    id: 9,
+    display_name: "eight"
+}
+item {
+    name: "nine",
+    id: 10,
+    display_name: "nine"
+}
+```
+
+- jpg and xml files
 
 ![vaik-mnist-detection-dataset-output](https://user-images.githubusercontent.com/116471878/198033194-8282c30a-bce0-4634-86bc-a85c83ccd1a8.png)

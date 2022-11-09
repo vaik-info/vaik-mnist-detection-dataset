@@ -62,9 +62,9 @@ def write(output_sub_dir_path, sample_num, image_max_size, image_min_size, char_
             mnist_char_image = np.clip((mnist_char_image > 125) * 255, 0, 255)
             mnist_char_image = crop_char_image(mnist_char_image)
             mnist_color_char_image = np.zeros(mnist_char_image.shape + (3,), dtype=np.uint8)
-            mnist_color_char_image[:, :, 0] = mnist_char_image * random.randint(0, 255)
-            mnist_color_char_image[:, :, 1] = mnist_char_image * random.randint(0, 255)
-            mnist_color_char_image[:, :, 2] = mnist_char_image * random.randint(0, 255)
+            mnist_color_char_image[:, :, 0] = (mnist_char_image * random.uniform(0., 1.)).astype(np.uint8)
+            mnist_color_char_image[:, :, 1] = (mnist_char_image * random.uniform(0., 1.)).astype(np.uint8)
+            mnist_color_char_image[:, :, 2] = (mnist_char_image * random.uniform(0., 1.)).astype(np.uint8)
 
             paste_start_x = random.randint(0, canvas.shape[1] - mnist_color_char_image.shape[1])
             paste_end_x = paste_start_x + mnist_color_char_image.shape[1]
